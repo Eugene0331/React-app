@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import UserInfo from "./UserInfo";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <UserInfo
+        userName="Вова"
+        userGender="Муж"
+        userAge="27"
+        yearsWorked="1"
+      />
+      <br />
+      <UserInfo
+        userName="Иван"
+        userGender="Муж"
+        userAge="21"
+        yearsWorked="2"
+      />
+      <br />
+      <UserInfo
+        userName="Ольга"
+        userGender="Жен"
+        userAge="37"
+        yearsWorked="3"
+      />
     </div>
   );
 }
+
+
 
 export default App;
